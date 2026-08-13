@@ -59,6 +59,7 @@ h1,h2,h3{
   letter-spacing:.14em;
   color:var(--slate);
 }
+.no-margin{margin:0;}
 
 /* skip link / focus */
 .skip-link{
