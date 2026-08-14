@@ -11,6 +11,11 @@ window.injectEbayFinds = async function injectEbayFinds() {
   const grid = document.getElementById('dealGrid');
   if (!grid) return;
 
+  // On dedicated category pages, add data-ebay-category="Vintage Books" (etc.)
+  // to the grid div to show only that category. Leave it off (like the
+  // homepage) to show everything.
+  const categoryFilter = grid.dataset.ebayCategory || null;
+
   let data;
   try {
     const res = await fetch('data/listings.json', { cache: 'no-store' });
@@ -18,11 +23,23 @@ window.injectEbayFinds = async function injectEbayFinds() {
     data = await res.json();
   } catch (err) {
     console.error('Could not load eBay listings:', err);
-    return; // leave the grid as-is (other marketplace cards still show)
+    return; // leave the grid as-is (other marketplace cards still show, if any)
   }
 
-  const items = data.items || [];
-  if (!items.length) return;
+  let items = data.items || [];
+  if (categoryFilter) {
+    items = items.filter((item) => item.category === categoryFilter);
+  }
+
+  if (!items.length) {
+    grid.innerHTML = `
+      <div class="col-12 text-center py-5 text-muted">
+        <h3 class="h5" style="color:var(--ink);">No finds yet</h3>
+        <p class="mb-0">Check back soon — new finds are added daily.</p>
+      </div>
+    `;
+    return;
+  }
 
   const html = items.map(renderCard).join('');
   grid.insertAdjacentHTML('afterbegin', html);
@@ -46,12 +63,13 @@ function renderCard(item) {
   return `
     <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="ebay" data-craft="crochet">
       <div class="card h-100 shadow-sm">
-        ${item.image ? `<img src="${escapeHtml(item.image)}" class="card-img-top deal-img" alt="${escapeHtml(item.title)}" loading="lazy">` : ''}
+        <div class="deal-img-wrap">
+          ${item.image ? `<img src="${escapeHtml(item.image)}" class="deal-img" alt="${escapeHtml(item.title)}" loading="lazy">` : ''}
+        </div>
         <div class="card-body d-flex flex-column">
           <span class="badge rounded-pill mb-2 align-self-start badge-ebay">eBay</span>
-          <h3 class="h6 fw-bold mb-1">${escapeHtml(item.title)}</h3>
+          <h3 class="h6 fw-bold mb-1 deal-title">${escapeHtml(item.title)}</h3>
           <p class="text-muted small mb-2">${escapeHtml(item.category)}</p>
-          ${item.condition ? `<p class="small mb-3">${escapeHtml(item.condition)}</p>` : ''}
           <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
             ${priceRow}
           </div>
