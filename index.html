@@ -26,11 +26,11 @@
     </a>
     <nav class="main-nav" aria-label="Primary">
       <a href="index.html" class="active">Home</a>
+      <a href="vintage-books.html">Vintage Books</a>
+      <a href="vintage-hooks.html">Vintage Hooks</a>
+      <a href="yarn.html">Yarn</a>
+      <a href="crochet-cotton.html">Crochet Cotton</a>
       <a href="about.html">About &amp; Disclosure</a>
-      <div class="header-search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        <input id="dealSearch" type="search" placeholder="Search finds…" aria-label="Search deals">
-      </div>
     </nav>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -60,10 +60,216 @@
 
   <section class="wrap" id="browse">
     <div class="filter-bar">
-
-    <div class="row g-4" id="dealGrid">
+      <div class="filter-pills" role="group" aria-label="Filter by marketplace">
+        <button class="pill" data-filter="all" aria-pressed="true">All finds</button>
+        <button class="pill ebay-pill" data-filter="ebay" aria-pressed="false">eBay</button>
+        <button class="pill etsy-pill" data-filter="etsy" aria-pressed="false">Etsy</button>
+        <button class="pill walmart-pill" data-filter="walmart" aria-pressed="false">Walmart</button>
+        <button class="pill michaels-pill" data-filter="michaels" aria-pressed="false">Michaels</button>
+      </div>
+      <p class="eyebrow no-margin">Updated daily · affiliate links</p>
     </div>
-    </section>
+    <div class="filter-row">
+      <p class="eyebrow">Shop by craft</p>
+      <div class="filter-pills" role="group" aria-label="Filter by craft">
+        <button class="pill" data-craft="all" aria-pressed="true">All crafts</button>
+        <button class="pill" data-craft="crochet" aria-pressed="false">Crochet</button>
+        <button class="pill" data-craft="knitting" aria-pressed="false">Knitting</button>
+        <button class="pill" data-craft="sewing" aria-pressed="false">Sewing</button>
+      </div>
+    </div>
+    <div class="row g-4" id="dealGrid">
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="crochet knitting">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Hand-Dyed Merino Yarn Skein</h3>
+            <p class="text-muted small mb-2">Yarn</p>
+            <p class="small mb-3">Kettle-dyed in small batches, so no two skeins are exactly alike. Soft enough for garments.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$18.00</span>
+              <span class="badge badge-save ms-auto">Small batch</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="sewing">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">100% Cotton Quilting Fat Quarter Bundle</h3>
+            <p class="text-muted small mb-2">Fabric</p>
+            <p class="small mb-3">20 coordinated fat quarters, pre-washed and ready to cut for your next quilting project.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$26.00</span>
+              <span class="text-muted text-decoration-line-through small">$32.00</span>
+              <span class="badge badge-save ms-auto">19% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="sewing crochet knitting">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Vintage Mother-of-Pearl Buttons (Jar of 50)</h3>
+            <p class="text-muted small mb-2">Notions</p>
+            <p class="small mb-3">A mixed jar of genuine vintage shell buttons — great for finishing handmade garments.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$16.00</span>
+              <span class="badge badge-save ms-auto">One of a kind</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="sewing">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Embroidery Floss Bundle (36 colors)</h3>
+            <p class="text-muted small mb-2">Embroidery</p>
+            <p class="small mb-3">36 pre-wound bobbins of six-strand floss, organized and ready for cross-stitch or hand embroidery.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$14.50</span>
+              <span class="text-muted text-decoration-line-through small">$19.00</span>
+              <span class="badge badge-save ms-auto">24% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="sewing">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Printable Cross-Stitch Pattern, Wildflowers</h3>
+            <p class="text-muted small mb-2">Patterns</p>
+            <p class="small mb-3">An instant PDF download with a full color chart and floss key — start stitching today.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$5.50</span>
+              <span class="badge badge-save ms-auto">Instant download</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="sewing crochet knitting">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Satin Ribbon Roll Set (12 colors)</h3>
+            <p class="text-muted small mb-2">Notions</p>
+            <p class="small mb-3">12 rolls of double-faced satin ribbon in coordinating colors, useful across almost any craft.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$13.00</span>
+              <span class="text-muted text-decoration-line-through small">$16.00</span>
+              <span class="badge badge-save ms-auto">19% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="crochet knitting">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Chunky Wool Yarn, Weaving Basket Bundle</h3>
+            <p class="text-muted small mb-2">Yarn</p>
+            <p class="small mb-3">A basket of chunky wool in warm neutrals — quick-knit blankets or statement weaving pieces.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$42.00</span>
+              <span class="badge badge-save ms-auto">Bestseller</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="etsy" data-craft="crochet">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-etsy">Etsy</span>
+            <h3 class="h6 fw-bold mb-1">Aluminum Crochet Hooks, Ergonomic Grip</h3>
+            <p class="text-muted small mb-2">Crochet Hooks</p>
+            <p class="small mb-3">Lightweight aluminum hooks with a cushioned grip — a favorite for long project sessions.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$23.00</span>
+              <span class="text-muted text-decoration-line-through small">$28.00</span>
+              <span class="badge badge-save ms-auto">18% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="walmart" data-craft="crochet knitting">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-walmart">Walmart</span>
+            <h3 class="h6 fw-bold mb-1">Yarn Bee Soft Secret Yarn, 3-Pack</h3>
+            <p class="text-muted small mb-2">Yarn</p>
+            <p class="small mb-3">A budget-friendly acrylic-blend yarn that's soft for baby blankets and everyday projects.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$11.97</span>
+              <span class="text-muted text-decoration-line-through small">$14.97</span>
+              <span class="badge badge-save ms-auto">20% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="walmart" data-craft="sewing">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-walmart">Walmart</span>
+            <h3 class="h6 fw-bold mb-1">Fiskars Sewing Scissors, 8″</h3>
+            <p class="text-muted small mb-2">Tools</p>
+            <p class="small mb-3">A reliable everyday fabric scissor — sharp out of the box and easy to find in-store.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$8.44</span>
+              <span class="text-muted text-decoration-line-through small">$12.99</span>
+              <span class="badge badge-save ms-auto">35% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="michaels" data-craft="crochet knitting">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-michaels">Michaels</span>
+            <h3 class="h6 fw-bold mb-1">Loops &amp; Threads Cotton Yarn Bundle</h3>
+            <p class="text-muted small mb-2">Yarn</p>
+            <p class="small mb-3">A multi-skein cotton bundle in coordinating shades — good for dishcloths and summer garments.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$19.99</span>
+              <span class="text-muted text-decoration-line-through small">$27.96</span>
+              <span class="badge badge-save ms-auto">29% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="michaels" data-craft="sewing">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <span class="badge rounded-pill mb-2 align-self-start badge-michaels">Michaels</span>
+            <h3 class="h6 fw-bold mb-1">Bella Cotton Quilting Fabric Bundle</h3>
+            <p class="text-muted small mb-2">Fabric</p>
+            <p class="small mb-3">A curated bundle of quilting-weight cottons in a matching palette, ready to cut and piece.</p>
+            <div class="d-flex align-items-baseline gap-2 mb-3 mt-auto">
+              <span class="fw-bold">$24.99</span>
+              <span class="text-muted text-decoration-line-through small">$34.99</span>
+              <span class="badge badge-save ms-auto">29% off</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener sponsored" class="btn btn-sm btn-view">View deal</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <section class="newsletter">
     <div class="wrap">
