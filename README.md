@@ -1,93 +1,63 @@
-# Crafterlady Crochet Finds
+# CrafterLady — Live eBay Finds
 
-Automatically pulls crochet listings (yarn, hooks, patterns, kits, amigurumi
-supplies, and more) from eBay and displays them on your site with your
-affiliate link already attached. Runs itself once set up — nothing to
-search for or update by hand.
+This plugs real, auto-updating eBay crochet listings into your **existing**
+site design — same cards, same filters, same search box you already built.
+Nothing about your look changes.
 
-Visitors see a full grid of finds by default (no search required), and a
-search box lets them narrow it down — e.g. typing "hook" or "yarn worsted"
-filters the same list instantly, no extra page loads.
+## What's in this folder
 
-## How it works
-
-1. A GitHub Action runs once a day (or whenever you trigger it manually).
-2. It calls eBay's Browse API, searching for the categories in
-   `scripts/fetch-listings.mjs`, and tags every result with your EPN
-   Campaign ID so clicks/sales are tracked to you.
-3. It saves the results to `data/listings.json` and commits it.
-4. The widget script on your site reads that file and renders the cards —
-   no server, no build step.
+- `index.html` — your homepage, with the 8 *fake/placeholder* eBay cards
+  removed (your Etsy/Walmart/Michaels placeholder cards are untouched —
+  replace those later the same way, if you want).
+- `js/ebay-live.js` — loads real eBay listings and inserts them as cards
+  matching your exact design, before your existing filter script runs.
+- `scripts/fetch-listings.mjs` — searches eBay for crochet items and
+  writes them to `data/listings.json`, with your affiliate link attached.
+- `.github/workflows/update-listings.yml` — runs the script automatically,
+  once a day.
+- `data/listings.json` — starts empty; the automation fills it in.
 
 ## One-time setup
 
 ### 1. Get eBay developer API keys
-
-You already have your EPN affiliate account. This is a separate, free
-step — the API keys are what let the automation *search* eBay (separate
-from the affiliate link tracking itself).
-
-1. Go to https://developer.ebay.com and sign in with your eBay account.
-2. Create an application (any name is fine, e.g. "Crafterlady Site").
-3. Under **Production keys**, copy your **Client ID** and **Client Secret**.
-   You won't paste these into any file — they go into GitHub secrets (below).
+Go to developer.ebay.com → sign in → create an application → copy the
+**Production** Client ID and Client Secret. (This is what you were
+working through with the "marketplace deletion notification" exemption —
+finish that first if you haven't already.)
 
 ### 2. Find your EPN Campaign ID
+On your eBay Partner Network dashboard at partnernetwork.ebay.com.
 
-Log into partnernetwork.ebay.com → your Campaign ID is shown on the
-dashboard (it's a long number, not the same as your eBay username).
-
-### 3. Add your keys as GitHub repo secrets
-
-In your `crafterlady` repo on GitHub.com (not GitHub Desktop):
-
-1. Go to **Settings → Secrets and variables → Actions**.
-2. Click **New repository secret** and add each of these three:
-   - `EBAY_CLIENT_ID`
-   - `EBAY_CLIENT_SECRET`
-   - `EBAY_CAMPAIGN_ID`
-
-These stay private — they're never exposed on your live site.
+### 3. Add three GitHub repo secrets
+On GitHub.com, in your repo: **Settings → Secrets and variables →
+Actions → New repository secret**. Add:
+- `EBAY_CLIENT_ID`
+- `EBAY_CLIENT_SECRET`
+- `EBAY_CAMPAIGN_ID`
 
 ### 4. Copy these files into your repo
-
-Copy this whole folder structure into your `crafterlady` repo (pull in
-GitHub Desktop afterward like normal):
-
+In GitHub Desktop, open your repo folder and copy in:
 ```
-.github/workflows/update-listings.yml
+index.html          (replaces your current one)
+js/ebay-live.js      (new file)
 scripts/fetch-listings.mjs
 data/listings.json
-widget/listings-widget.css
-widget/listings-widget.js
+.github/workflows/update-listings.yml
 ```
+Your `css/style.css` and `js/main.js` don't need any changes.
 
-### 5. Embed the widget on a page
-
-Open `widget/embed-snippet.html` and copy its contents into whichever page
-you want the "Finds We Love" section to show up on (e.g. your homepage or a
-dedicated shop page).
+### 5. Commit and push in GitHub Desktop
+Write a summary like "Add live eBay crochet finds", commit, push.
 
 ### 6. Run it once by hand
-
-You don't need to wait for the daily schedule the first time:
-
-1. In your repo on GitHub.com, go to the **Actions** tab.
-2. Click **Update eBay listings** in the sidebar.
-3. Click **Run workflow**.
-
-After it finishes (about a minute), `data/listings.json` will have real
-items and your site will show them next time it loads.
+On GitHub.com → **Actions** tab → **Update eBay listings** → **Run
+workflow**. After it finishes, refresh your live site — real crochet
+finds should appear in the eBay-tagged cards.
 
 ## Changing what it searches for
-
-Open `scripts/fetch-listings.mjs` and edit the `SEARCHES` list near the top
-— change the search terms, add/remove groups (e.g. add "Blankets" or
-"Baby items"), or adjust how many items per group. Commit the change and
-the next scheduled run picks it up. All groups get merged into one
-searchable pool on the site.
+Edit the `SEARCHES` list near the top of `scripts/fetch-listings.mjs` —
+add, remove, or tweak search terms and category labels. Commit the
+change and the next scheduled run picks it up.
 
 ## Changing the schedule
-
-Open `.github/workflows/update-listings.yml` and edit the `cron` line.
-It's currently set to run daily at 13:00 UTC.
+Edit the `cron` line in `.github/workflows/update-listings.yml`.

@@ -1,13 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fetches eBay listings via the Browse API and writes them to data/listings.json
- * with your EPN affiliate link already attached to every item.
+ * Fetches crochet listings from eBay's Browse API and writes them to
+ * data/listings.json in the shape js/ebay-live.js expects, with your
+ * EPN affiliate link already attached to every item.
  *
- * Runs automatically on a schedule via the GitHub Action in
- * .github/workflows/update-listings.yml — you shouldn't need to run this
- * by hand, but you can with:
- *
- *   EBAY_CLIENT_ID=xxx EBAY_CLIENT_SECRET=xxx EBAY_CAMPAIGN_ID=xxx node scripts/fetch-listings.mjs
+ * Runs automatically via .github/workflows/update-listings.yml.
+ * Manual run: EBAY_CLIENT_ID=xxx EBAY_CLIENT_SECRET=xxx EBAY_CAMPAIGN_ID=xxx node scripts/fetch-listings.mjs
  */
 
 import { writeFile, mkdir } from 'fs/promises';
@@ -22,18 +20,17 @@ if (!EBAY_CLIENT_ID || !EBAY_CLIENT_SECRET || !EBAY_CAMPAIGN_ID) {
   process.exit(1);
 }
 
-// ---- Edit this list any time to change what shows up on the site. ----
-// "label" is a sub-category tag (used for optional grouping/search), "query"
-// is what gets searched on eBay. All items get merged into one pool that
-// visitors can browse or search across.
+// ---- Edit this list any time to change what gets fetched. ----
+// "category" matches the style of labels already used on the site
+// (e.g. "Crochet Hooks", "Yarn") and becomes the small text under
+// each card's title.
 const SEARCHES = [
-  { label: 'Yarn', query: 'crochet yarn', limit: 12 },
-  { label: 'Hooks', query: 'crochet hook set', limit: 10 },
-  { label: 'Patterns', query: 'crochet pattern PDF', limit: 10 },
-  { label: 'Kits', query: 'crochet kit beginner', limit: 10 },
-  { label: 'Amigurumi', query: 'amigurumi crochet supplies', limit: 10 },
-  { label: 'Stitch Markers & Notions', query: 'crochet stitch markers notions', limit: 8 },
-  { label: 'Books & Magazines', query: 'crochet pattern book', limit: 8 },
+  { category: 'Crochet Hooks', query: 'crochet hook set', limit: 8 },
+  { category: 'Yarn', query: 'crochet yarn', limit: 10 },
+  { category: 'Crochet Cotton', query: 'crochet thread cotton', limit: 6 },
+  { category: 'Notions', query: 'crochet stitch markers notions', limit: 6 },
+  { category: 'Patterns', query: 'crochet pattern PDF', limit: 8 },
+  { category: 'Kits', query: 'amigurumi crochet kit', limit: 6 },
 ];
 
 const MARKETPLACE = 'EBAY_US';
@@ -60,7 +57,14 @@ async function getAccessToken() {
   return data.access_token;
 }
 
-async function searchListings(token, { label, query, limit }) {
+function formatMoney(amount) {
+  if (!amount) return null;
+  const value = Number(amount.value);
+  if (Number.isNaN(value)) return null;
+  return `$${value.toFixed(2)}`;
+}
+
+async function searchListings(token, { category, query, limit }) {
   const url = new URL('https://api.ebay.com/buy/browse/v1/item_summary/search');
   url.searchParams.set('q', query);
   url.searchParams.set('limit', String(limit));
@@ -69,8 +73,8 @@ async function searchListings(token, { label, query, limit }) {
     headers: {
       Authorization: `Bearer ${token}`,
       'X-EBAY-C-MARKETPLACE-ID': MARKETPLACE,
-      // This is what attaches your EPN campaign to every result so clicks
-      // and purchases get tracked back to you automatically.
+      // Attaches your EPN campaign to every result so purchases are
+      // tracked back to you automatically.
       'X-EBAY-C-ENDUSERCTX': `affiliateCampaignId=${EBAY_CAMPAIGN_ID}`,
     },
   });
@@ -80,20 +84,24 @@ async function searchListings(token, { label, query, limit }) {
   }
 
   const data = await res.json();
-  return (data.itemSummaries || []).map((item) => ({
-    id: item.itemId,
-    tag: label,
-    title: item.title,
-    price: item.price ? `${item.price.value} ${item.price.currency}` : null,
-    image: item.image?.imageUrl || item.thumbnailImages?.[0]?.imageUrl || null,
-    condition: item.condition || null,
-    seller: item.seller?.username || null,
-    // itemAffiliateWebUrl comes pre-tagged with your campaign ID when the
-    // header above is set. The fallback covers the rare case it's missing.
-    url:
-      item.itemAffiliateWebUrl ||
-      `${item.itemWebUrl}${item.itemWebUrl.includes('?') ? '&' : '?'}campid=${EBAY_CAMPAIGN_ID}`,
-  }));
+  return (data.itemSummaries || []).map((item) => {
+    const price = formatMoney(item.price);
+    const originalPrice = formatMoney(item.marketingPrice?.originalPrice);
+    const discountPct = item.marketingPrice?.discountPercentage;
+
+    return {
+      id: item.itemId,
+      category,
+      title: item.title,
+      condition: item.condition || null,
+      price,
+      originalPrice: originalPrice && originalPrice !== price ? originalPrice : null,
+      discountLabel: discountPct ? `${discountPct}% off` : null,
+      url:
+        item.itemAffiliateWebUrl ||
+        `${item.itemWebUrl}${item.itemWebUrl.includes('?') ? '&' : '?'}campid=${EBAY_CAMPAIGN_ID}`,
+    };
+  });
 }
 
 async function main() {
@@ -102,10 +110,9 @@ async function main() {
   const seenIds = new Set();
 
   for (const search of SEARCHES) {
-    console.log(`Fetching: ${search.label} ("${search.query}")`);
+    console.log(`Fetching: ${search.category} ("${search.query}")`);
     const results = await searchListings(token, search);
     for (const item of results) {
-      // Skip duplicates in case the same listing turns up under two searches.
       if (!seenIds.has(item.id)) {
         seenIds.add(item.id);
         items.push(item);

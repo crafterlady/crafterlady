@@ -2,8 +2,7 @@ name: Update eBay listings
 
 on:
   schedule:
-    # 13:00 UTC = 9am US Eastern / 8am US Central. Adjust to taste.
-    - cron: '0 13 * * *'
+    - cron: '0 13 * * *' # 13:00 UTC daily — adjust to taste
   workflow_dispatch: {} # adds a "Run workflow" button in the Actions tab
 
 permissions:
