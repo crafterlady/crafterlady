@@ -258,3 +258,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{
 .footer-col a{display:block;font-size:.92rem;padding:3px 0;}
 .footer-col a:hover{color:var(--thread-dark);}
 .footer-legal{font-size:.8rem;color:var(--slate);margin-top:30px;max-width:640px;line-height:1.6;}
+.deal-img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-bottom:1.5px solid var(--brick);
+}
