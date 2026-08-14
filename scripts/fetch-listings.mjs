@@ -25,12 +25,13 @@ if (!EBAY_CLIENT_ID || !EBAY_CLIENT_SECRET || !EBAY_CAMPAIGN_ID) {
 // (e.g. "Crochet Hooks", "Yarn") and becomes the small text under
 // each card's title.
 const SEARCHES = [
-  { category: 'Crochet Hooks', query: 'crochet hook set', limit: 8 },
-  { category: 'Yarn', query: 'crochet yarn', limit: 10 },
+  { category: 'Crochet Hooks', query: 'crochet hook set', limit: 6 },
+  { category: 'Yarn', query: 'crochet yarn', limit: 6 },
   { category: 'Crochet Cotton', query: 'crochet thread cotton', limit: 6 },
   { category: 'Notions', query: 'crochet stitch markers notions', limit: 6 },
-  { category: 'Patterns', query: 'crochet pattern PDF', limit: 8 },
+  { category: 'Patterns', query: 'crochet pattern PDF', limit: 6 },
   { category: 'Kits', query: 'amigurumi crochet kit', limit: 6 },
+  { category: 'Books & Magazines', query: 'crochet pattern book', limit: 6 },
 ];
 
 const MARKETPLACE = 'EBAY_US';
@@ -88,6 +89,7 @@ async function searchListings(token, { category, query, limit }) {
     const price = formatMoney(item.price);
     const originalPrice = formatMoney(item.marketingPrice?.originalPrice);
     const discountPct = item.marketingPrice?.discountPercentage;
+    const image = item.image?.imageUrl || item.thumbnailImages?.[0]?.imageUrl || null;
 
     return {
       id: item.itemId,
@@ -97,6 +99,7 @@ async function searchListings(token, { category, query, limit }) {
       price,
       originalPrice: originalPrice && originalPrice !== price ? originalPrice : null,
       discountLabel: discountPct ? `${discountPct}% off` : null,
+      image,
       url:
         item.itemAffiliateWebUrl ||
         `${item.itemWebUrl}${item.itemWebUrl.includes('?') ? '&' : '?'}campid=${EBAY_CAMPAIGN_ID}`,

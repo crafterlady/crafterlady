@@ -46,6 +46,7 @@ function renderCard(item) {
   return `
     <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="ebay" data-craft="crochet">
       <div class="card h-100 shadow-sm">
+        ${item.image ? `<img src="${escapeHtml(item.image)}" class="card-img-top deal-img" alt="${escapeHtml(item.title)}" loading="lazy">` : ''}
         <div class="card-body d-flex flex-column">
           <span class="badge rounded-pill mb-2 align-self-start badge-ebay">eBay</span>
           <h3 class="h6 fw-bold mb-1">${escapeHtml(item.title)}</h3>
