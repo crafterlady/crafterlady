@@ -6,16 +6,19 @@
  *
  * Runs BEFORE setupGridFilters() (see the inline script at the bottom of
  * index.html) so the filters/search see these cards from the start.
+ *
+ * data-ebay-category on #dealGrid can be a single category ("Vintage Books")
+ * or a comma-separated list ("Aunt Lydia's,Lizbeth,Coats,DMC,South Maid,Herrschners")
+ * to show several categories together on one page. Leave it off (like the
+ * homepage) to show everything.
  */
 window.injectEbayFinds = async function injectEbayFinds() {
   const grid = document.getElementById('dealGrid');
   if (!grid) return;
-
-  // On dedicated category pages, add data-ebay-category="Vintage Books" (etc.)
-  // to the grid div to show only that category. Leave it off (like the
-  // homepage) to show everything.
   const categoryFilter = grid.dataset.ebayCategory || null;
-
+  const categoryList = categoryFilter
+    ? categoryFilter.split(',').map((c) => c.trim())
+    : null;
   let data;
   try {
     const res = await fetch('data/listings.json', { cache: 'no-store' });
@@ -25,12 +28,10 @@ window.injectEbayFinds = async function injectEbayFinds() {
     console.error('Could not load eBay listings:', err);
     return; // leave the grid as-is (other marketplace cards still show, if any)
   }
-
   let items = data.items || [];
-  if (categoryFilter) {
-    items = items.filter((item) => item.category === categoryFilter);
+  if (categoryList) {
+    items = items.filter((item) => categoryList.includes(item.category));
   }
-
   if (!items.length) {
     grid.innerHTML = `
       <div class="col-12 text-center py-5 text-muted">
@@ -40,17 +41,14 @@ window.injectEbayFinds = async function injectEbayFinds() {
     `;
     return;
   }
-
   const html = items.map(renderCard).join('');
   grid.insertAdjacentHTML('afterbegin', html);
 };
-
 function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str == null ? '' : String(str);
   return div.innerHTML;
 }
-
 function renderCard(item) {
   const priceRow = item.originalPrice
     ? `
@@ -59,7 +57,6 @@ function renderCard(item) {
       ${item.discountLabel ? `<span class="badge badge-save ms-auto">${escapeHtml(item.discountLabel)}</span>` : ''}
     `
     : `<span class="fw-bold">${escapeHtml(item.price)}</span>`;
-
   return `
     <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="ebay" data-craft="crochet">
       <div class="card h-100 shadow-sm">
