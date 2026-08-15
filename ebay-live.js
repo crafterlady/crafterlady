@@ -4,18 +4,21 @@
  * structure and CSS classes as the rest of the site, so they filter and
  * search correctly alongside the Etsy/Walmart/Michaels placeholder cards.
  *
+ * data/listings.json is grouped by brand ("sections"), each with its own
+ * label and list of listings — e.g. Aunt Lydia's, Lizbeth, Coats, DMC,
+ * South Maid, Herrschners. This renders one labeled row of cards per
+ * section, in the order they appear in the JSON.
+ *
  * Runs BEFORE setupGridFilters() (see the inline script at the bottom of
  * index.html) so the filters/search see these cards from the start.
  */
 window.injectEbayFinds = async function injectEbayFinds() {
   const grid = document.getElementById('dealGrid');
   if (!grid) return;
-
   // On dedicated category pages, add data-ebay-category="Vintage Books" (etc.)
-  // to the grid div to show only that category. Leave it off (like the
-  // homepage) to show everything.
+  // to the grid div to show only that section's cards. Leave it off (like
+  // the homepage) to show every section.
   const categoryFilter = grid.dataset.ebayCategory || null;
-
   let data;
   try {
     const res = await fetch('data/listings.json', { cache: 'no-store' });
@@ -26,12 +29,14 @@ window.injectEbayFinds = async function injectEbayFinds() {
     return; // leave the grid as-is (other marketplace cards still show, if any)
   }
 
-  let items = data.items || [];
+  let sections = data.sections || [];
   if (categoryFilter) {
-    items = items.filter((item) => item.category === categoryFilter);
+    sections = sections.filter((section) => section.label === categoryFilter);
   }
+  // Only keep sections that actually have listings.
+  sections = sections.filter((section) => (section.listings || []).length);
 
-  if (!items.length) {
+  if (!sections.length) {
     grid.innerHTML = `
       <div class="col-12 text-center py-5 text-muted">
         <h3 class="h5" style="color:var(--ink);">No finds yet</h3>
@@ -41,7 +46,7 @@ window.injectEbayFinds = async function injectEbayFinds() {
     return;
   }
 
-  const html = items.map(renderCard).join('');
+  const html = sections.map(renderSection).join('');
   grid.insertAdjacentHTML('afterbegin', html);
 };
 
@@ -49,6 +54,16 @@ function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str == null ? '' : String(str);
   return div.innerHTML;
+}
+
+function renderSection(section) {
+  const heading = `
+    <div class="col-12 ebay-section-heading">
+      <h2 class="h5 fw-bold mb-3" style="color:var(--ink);">${escapeHtml(section.label)}</h2>
+    </div>
+  `;
+  const cards = (section.listings || []).map(renderCard).join('');
+  return heading + cards;
 }
 
 function renderCard(item) {
@@ -59,7 +74,6 @@ function renderCard(item) {
       ${item.discountLabel ? `<span class="badge badge-save ms-auto">${escapeHtml(item.discountLabel)}</span>` : ''}
     `
     : `<span class="fw-bold">${escapeHtml(item.price)}</span>`;
-
   return `
     <div class="col-12 col-sm-6 col-lg-3 deal-card" data-platform="ebay" data-craft="crochet">
       <div class="card h-100 shadow-sm">

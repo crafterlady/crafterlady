@@ -26,19 +26,18 @@ if (!EBAY_CLIENT_ID || !EBAY_CLIENT_SECRET || !EBAY_CAMPAIGN_ID) {
 // (e.g. "Crochet Hooks", "Yarn") and becomes the small text under
 // each card's title.
 const SEARCHES = [
-  { category: 'Crochet Hooks', query: 'crochet hook set', limit: 6 },
-  { category: 'Yarn', query: 'crochet yarn', limit: 6 },
-  { category: 'Crochet Cotton', query: 'crochet thread cotton', limit: 6 },
-  { category: 'Notions', query: 'crochet stitch markers notions', limit: 6 },
-  { category: 'Patterns', query: 'crochet pattern PDF', limit: 6 },
-  { category: 'Kits', query: 'amigurumi crochet kit', limit: 6 },
-  { category: 'Books & Magazines', query: 'crochet pattern book', limit: 6 },
-  { category: 'Vintage Books', query: 'vintage crochet pattern book', limit: 8 },
-  { category: 'Vintage Hooks', query: 'vintage crochet hook', limit: 8 },
+  { category: 'Crochet Hooks', query: 'crochet hook set', limit: 6, maxPrice: 20 },
+  { category: 'Yarn', query: 'crochet yarn', limit: 6, maxPrice: 20 },
+  { category: 'Crochet Cotton', query: 'crochet thread cotton', limit: 6, maxPrice: 20 },
+  { category: 'Notions', query: 'crochet stitch markers notions', limit: 6, maxPrice: 20 },
+  { category: 'Patterns', query: 'crochet pattern PDF', limit: 6, maxPrice: 20 },
+  { category: 'Kits', query: 'amigurumi crochet kit', limit: 6, maxPrice: 20 },
+  { category: 'Books & Magazines', query: 'crochet pattern book', limit: 6, maxPrice: 20 },
+  { category: 'Vintage Books', query: 'vintage crochet book lot', limit: 10, maxPrice: 40 },
+  { category: 'Vintage Hooks', query: 'vintage crochet hook', limit: 8, maxPrice: 60 },
 ];
 
 const MARKETPLACE = 'EBAY_US';
-const MAX_TOTAL_PRICE = 20; // items where price + shipping exceeds this are skipped entirely
 const IMAGE_SIZE = 250; // every saved photo is exactly this many pixels square
 const IMAGES_DIR = path.resolve('data', 'images');
 
@@ -90,7 +89,7 @@ function formatMoney(amount) {
   return `$${value.toFixed(2)}`;
 }
 
-async function searchListings(token, { category, query, limit }) {
+async function searchListings(token, { category, query, limit, maxPrice }) {
   const url = new URL('https://api.ebay.com/buy/browse/v1/item_summary/search');
   url.searchParams.set('q', query);
   url.searchParams.set('limit', String(limit));
@@ -135,7 +134,7 @@ async function searchListings(token, { category, query, limit }) {
           `${item.itemWebUrl}${item.itemWebUrl.includes('?') ? '&' : '?'}campid=${EBAY_CAMPAIGN_ID}`,
       };
     })
-    .filter((item) => item.totalPrice <= MAX_TOTAL_PRICE);
+    .filter((item) => item.totalPrice <= maxPrice);
 }
 
 async function main() {
