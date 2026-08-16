@@ -28,7 +28,7 @@ if (!EBAY_CLIENT_ID || !EBAY_CLIENT_SECRET || !EBAY_CAMPAIGN_ID) {
 const SEARCHES = [
   { category: 'Crochet Hooks', query: 'crochet hook set', limit: 6, maxPrice: 20 },
   { category: 'Yarn', query: 'crochet yarn', limit: 6, maxPrice: 20 },
-  { category: 'Crochet Cotton', query: 'crochet thread cotton', limit: 6, maxPrice: 20 },
+  { category: 'Crochet Cotton', query: 'crochet cotton', limit: 6, maxPrice: 20 },
   { category: 'Notions', query: 'crochet stitch markers notions', limit: 6, maxPrice: 20 },
   { category: 'Patterns', query: 'crochet pattern PDF', limit: 6, maxPrice: 20 },
   { category: 'Kits', query: 'amigurumi crochet kit', limit: 6, maxPrice: 20 },
