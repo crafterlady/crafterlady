@@ -28,7 +28,7 @@ if (!EBAY_CLIENT_ID || !EBAY_CLIENT_SECRET || !EBAY_CAMPAIGN_ID) {
 const SEARCHES = [
   { category: 'Crochet Hooks', query: 'crochet hook set', limit: 6, maxPrice: 20 },
   { category: 'Yarn', query: 'crochet yarn', limit: 6, maxPrice: 20 },
-  { category: 'Crochet Cotton', query: 'crochet cotton', limit: 6, maxPrice: 20 },
+  { category: 'Crochet Cotton', query: 'crochet thread cotton', limit: 6, maxPrice: 20 },
   { category: 'Notions', query: 'crochet stitch markers notions', limit: 6, maxPrice: 20 },
   { category: 'Patterns', query: 'crochet pattern PDF', limit: 6, maxPrice: 20 },
   { category: 'Kits', query: 'amigurumi crochet kit', limit: 6, maxPrice: 20 },
@@ -92,7 +92,16 @@ function formatMoney(amount) {
 async function searchListings(token, { category, query, limit, maxPrice }) {
   const url = new URL('https://api.ebay.com/buy/browse/v1/item_summary/search');
   url.searchParams.set('q', query);
-  url.searchParams.set('limit', String(limit));
+  // Ask eBay for way more candidates than we need — we trim down to
+  // `limit` after filtering, so this just widens the pool Best Match
+  // picks from instead of capping us at `limit` raw results.
+  url.searchParams.set('limit', String(Math.max(limit * 10, 100)));
+  // Filter by price server-side so eBay actually returns items in
+  // range, rather than us discarding whatever Best Match happens to
+  // hand back. Restricted to fixed-price listings only — for
+  // auctions, `price` reflects current bid rather than a guaranteed
+  // final price, which isn't what we want for a storefront.
+  url.searchParams.set('filter', `price:[..${maxPrice}],priceCurrency:USD,buyingOptions:{FIXED_PRICE}`);
 
   const res = await fetch(url, {
     headers: {
@@ -134,7 +143,10 @@ async function searchListings(token, { category, query, limit, maxPrice }) {
           `${item.itemWebUrl}${item.itemWebUrl.includes('?') ? '&' : '?'}campid=${EBAY_CAMPAIGN_ID}`,
       };
     })
-    .filter((item) => item.totalPrice <= maxPrice);
+    // Backstop in case shipping cost pushes an item over budget even
+    // though the item price alone was within maxPrice server-side.
+    .filter((item) => item.totalPrice <= maxPrice)
+    .slice(0, limit);
 }
 
 async function main() {
