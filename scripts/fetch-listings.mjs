@@ -101,7 +101,12 @@ async function searchListings(token, { category, query, limit, maxPrice }) {
   // hand back. Restricted to fixed-price listings only — for
   // auctions, `price` reflects current bid rather than a guaranteed
   // final price, which isn't what we want for a storefront.
-  url.searchParams.set('filter', `price:[..${maxPrice}],priceCurrency:USD,buyingOptions:{FIXED_PRICE}`);
+  // maxPrice applies to item price only — shipping is shown
+  // separately rather than folded into the cap, so no buffer needed.
+  url.searchParams.set(
+    'filter',
+    `price:[..${maxPrice}],priceCurrency:USD,buyingOptions:{FIXED_PRICE}`
+  );
 
   const res = await fetch(url, {
     headers: {
@@ -132,9 +137,11 @@ async function searchListings(token, { category, query, limit, maxPrice }) {
         category,
         title: item.title,
         condition: item.condition || null,
-        totalPrice, // numeric, used for filtering/sorting
-        price: `$${totalPrice.toFixed(2)}`, // what's actually displayed — item + shipping combined
+        itemPrice, // numeric, used for the maxPrice cap
+        totalPrice, // numeric, item + shipping — for display only, not capped
+        price: `$${itemPrice.toFixed(2)}`, // item price shown on its own
         shippingCost,
+        shippingLabel: shippingCost > 0 ? `+ $${shippingCost.toFixed(2)} shipping` : 'Free shipping',
         originalPrice: originalPrice && originalPrice !== `$${itemPrice.toFixed(2)}` ? originalPrice : null,
         discountLabel: discountPct ? `${discountPct}% off` : null,
         image,
@@ -143,9 +150,9 @@ async function searchListings(token, { category, query, limit, maxPrice }) {
           `${item.itemWebUrl}${item.itemWebUrl.includes('?') ? '&' : '?'}campid=${EBAY_CAMPAIGN_ID}`,
       };
     })
-    // Backstop in case shipping cost pushes an item over budget even
-    // though the item price alone was within maxPrice server-side.
-    .filter((item) => item.totalPrice <= maxPrice)
+    // Backstop against the item price alone, matching the server-side
+    // filter — shipping is display-only and doesn't affect the cap.
+    .filter((item) => item.itemPrice <= maxPrice)
     .slice(0, limit);
 }
 
