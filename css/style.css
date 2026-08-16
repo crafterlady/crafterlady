@@ -212,7 +212,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{
   align-self:flex-start;
 }
 .btn-view:hover{background:var(--brick-dark);color:#fff;}
-#dealGrid .card{border-radius:var(--radius);border:1.5px solid var(--brick);}
+#dealGrid .card{border-radius:var(--radius);border:1px solid rgba(0,0,0,0.08);}
 #dealGrid .card-body{padding:1.25rem;}
 
 /* ---------- section intros (category pages) ---------- */
