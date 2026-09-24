@@ -1,50 +1,20 @@
 {
-  "generatedAt": "2026-09-23T17:47:25.527Z",
+  "generatedAt": "2026-09-24T17:48:54.093Z",
   "items": [
     {
       "id": "v1|405087917849|0",
       "category": "Crochet Hooks",
       "title": "22pcs Crochet Hook Set Yarn Knitting Needles Sewing Tools DIY Crochet Craft Tool",
       "condition": "New",
-      "itemPrice": 5.6,
-      "totalPrice": 5.6,
-      "price": "$5.60",
+      "itemPrice": 5.74,
+      "totalPrice": 5.74,
+      "price": "$5.74",
       "shippingCost": 0,
       "shippingLabel": "Free shipping",
       "originalPrice": "$7.00",
-      "discountLabel": "20% off",
+      "discountLabel": "18% off",
       "image": "data/images/v1|405087917849|0.jpg",
       "url": "https://www.ebay.com/itm/405087917849?_skw=crochet+hook+set&hash=item5e511f1719%3Ag%3AshUAAOSwKbpmjN7X&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|205474130234|0",
-      "category": "Crochet Hooks",
-      "title": "14 Pcs Crochet Hooks Set Clover Amour Steel Pastel Ergonomic Easy Grip Bright",
-      "condition": "New",
-      "itemPrice": 19.99,
-      "totalPrice": 19.99,
-      "price": "$19.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|205474130234|0.jpg",
-      "url": "https://www.ebay.com/itm/205474130234?_skw=crochet+hook+set&hash=item2fd736693a%3Ag%3AbtQAAOSwvJZoHNn-&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGY7rGASPjnu80%2By2JzXLoeBXWo1jqs%2FRi7jTAR0hWgL%2Bx0hbbVP7RWfXpGrMQAbDvOKAATTpBkr9i4IIO4hL%2Fkm8BWHAIQawdowjNExhtefeaRsNYUlM35%2FiMFoPNIoKAETzbHUj%2BL%2B8p6HmDHRvK%2BzDAdrP1kbewUoEjd0y%2Fb9bXda36ldQy20M%2FVk0SF8bKp%2BStWAAB2qc3kExrqs%2BOILR66yaEoKwyrbKf7VFFSvTqDyTX%2FTS82Aco7FfdjWQYfbYI271w6yW9flZvGyw8HVghsFywlfDUpSOadfbGZ3zw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|335405591975|0",
-      "category": "Crochet Hooks",
-      "title": "20 Pcs Bamboo Crochet Hooks Needles Set Hook Case Knitting Yarn Craft Ergonomic",
-      "condition": "New",
-      "itemPrice": 11.99,
-      "totalPrice": 11.99,
-      "price": "$11.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|335405591975|0.jpg",
-      "url": "https://www.ebay.com/itm/335405591975?_skw=crochet+hook+set&hash=item4e17bb2da7%3Ag%3Avi0AAOSwYYVmLHwu&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYu6aCpc79hTBLx5AGkP9ez0FfhJPJfH4zUCQJLjuqnnKNELtnEfp0GTb5jqWuk6lKr5Mng7GeGz6974J3lASfFP%2BXTRmtD2enPn6ljwDB3QpxSEWJXPfkkpow2cvDu%2BQ9l4NAH10e8slOGHzMRw3CZlb2eUm6tpf1iRvtHnbx0aCi0tHqa5%2Bk9KpA4f83UsILW1YpBoKUVUd%2FM0wxVG5phj1R0115W5mWobaQf6NlSerEH%2Bbb21H9k17A6nxJUtRLynyRgDRcFA2vIQSNjf5Mg74FrDnwS6A8w3nBIdAg%2BuQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|401347971803|0",
@@ -59,22 +29,52 @@
       "originalPrice": null,
       "discountLabel": null,
       "image": "data/images/v1|401347971803|0.jpg",
-      "url": "https://www.ebay.com/itm/401347971803?_skw=crochet+hook+set&hash=item5d72340adb%3Ag%3A-CIAAOSwlm5dB%7ENW&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYh%2BJu6hnXLcGuqQoLcGlglp2KDanIO9L8iVcBhPmtnGYZOVEy1w3PFTG3oTe1SADMfvZKk0EL%2BU80sfxap0gSm82hBFZMUnwX6gftsiHSxLXJxjBDCVvOQb%2BuQzIYQmtZfsHMwwdg2djI2Cgv6fM%2Biefz5ZBHMVhzsuSK3H%2Bnjy1sss6kxhhpv6Fzpg48Km1SKqGgphsQAxISTb9DPwboRbqUe4jYFMO%2BSuoO25wk4JHxron1WsLy8FPqeoCdxJIsJ5Y5lllXtDgg%2FJFk2XG8zTPU7NAuinj4SHAeg8FyiGg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "url": "https://www.ebay.com/itm/401347971803?_skw=crochet+hook+set&hash=item5d72340adb%3Ag%3A-CIAAOSwlm5dB%7ENW&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYh%2BJu6hnXLcGuqQoLcGlglp2KDanIO9L8iVcBhPmtnGYZOVEy1w3PFTG3oTe1SADMfvZKk0EL%2BU80sfxap0gSm82hBFZMUnwX6gftsiHSxLXJxjBDCVvOQb%2BuQzIYQmtbyb6CPEdb2wsAm5wlgmcM52Unsk2UDnv3ZsPZPlIIuscCjpSYksCAqVLjJLfQPUIhDwAnCH3xEN6t%2BTNWFzmgrPSR2WFmHx8UddWVJJeIykpzfA7AyhWJVnCj5hhxVi7vGD0BzhLqs3s1%2BxLup6%2Br5ClktuKTGCfgpBs3mX7PHSg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|127556755988|0",
+      "id": "v1|336750629266|0",
       "category": "Crochet Hooks",
-      "title": "Crochet Hooks Set Steel Pastel 14 Pcs Ergonomic Easy Grip Bright",
+      "title": "14 Pcs Crochet Hooks Set Clover Amour Steel Pastel Ergonomic Easy Grip Bright",
       "condition": "New",
-      "itemPrice": 9.09,
-      "totalPrice": 9.09,
-      "price": "$9.09",
+      "itemPrice": 14.78,
+      "totalPrice": 14.78,
+      "price": "$14.78",
       "shippingCost": 0,
       "shippingLabel": "Free shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|127556755988|0.jpg",
-      "url": "https://www.ebay.com/itm/127556755988?_skw=crochet+hook+set&hash=item1db2f9a214%3Ag%3AptkAAeSw7Z9pOp7D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|336750629266|0.jpg",
+      "url": "https://www.ebay.com/itm/336750629266?_skw=crochet+hook+set&hash=item4e67e6d192%3Ag%3ANpkAAeSwva1qhZWX&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYjDNr9EQgEUohM%2FK2hDYixGn2r9dG8R4wvZ3ISiwg%2BJSxRAVKtDenybpOFSJQHovme9W8WbYiO%2Byjt3xqJ7fq2KKTOGO4nZGeUru9PjZdYHd2y%2Fk3PHUAI9YrOUbhPLTNvjwFlI90kTo%2Fr8IJRnfdQblHhV9kbPpGu0oaYA5mNbh0YjGUdaTDZgm7rltMI4eBN403h5oQTSSBNpS8mMhoLoHgyh43mPSZzF31z1CDBHpUEIAMPHAQ%2ByUy4jjIwR9zhLldRvZHku5Nbx5UXBerYbfyh5Dd9iiHpuwxfGY9HFQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|286988835512|0",
+      "category": "Crochet Hooks",
+      "title": "NEWSoft Handle 12 PCS Set Crochet Hooks Needles Knit Yarn Weave Craft Aluminum",
+      "condition": "New",
+      "itemPrice": 9.48,
+      "totalPrice": 9.48,
+      "price": "$9.48",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": "$14.58",
+      "discountLabel": "35% off",
+      "image": "data/images/v1|286988835512|0.jpg",
+      "url": "https://www.ebay.com/itm/286988835512?_skw=crochet+hook+set&hash=item42d1de1ab8%3Ag%3AIFYAAeSwP2VpMWhp&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYG2uINdM1akq6QYguKA78fLsM48EcJRykopJkuz0YR%2FbaCsEbY5CBzR4xUBWP4z7SC5fSYWMQhJ82G%2BMV7R4asz5%2Bd%2BvGNzoM4RJ61zkvptHGMJMXAOXE81ep9NW%2BJLcavYRnSw8wlihoiql%2BcB%2BYXNqxmXO%2F6TrjpJF5DFUr2fKGRTz5nimZ0M2wik62fPW23m1Lhfuj6Id%2FhtSZa3zP0dDPqGUaR1sh1pFYt%2BW%2FtmzCKmMnzIaG%2B8k2MV6ObGR2y%2BSSgQhoSSZ6J9AaiUTQQXC21sSCuA1A9UwVAm1I%2BSw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|335405591975|0",
+      "category": "Crochet Hooks",
+      "title": "20 Pcs Bamboo Crochet Hooks Needles Set Hook Case Knitting Yarn Craft Ergonomic",
+      "condition": "New",
+      "itemPrice": 11.99,
+      "totalPrice": 11.99,
+      "price": "$11.99",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|335405591975|0.jpg",
+      "url": "https://www.ebay.com/itm/335405591975?_skw=crochet+hook+set&hash=item4e17bb2da7%3Ag%3Avi0AAOSwYYVmLHwu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|406115577933|0",
@@ -122,51 +122,6 @@
       "url": "https://www.ebay.com/itm/178462474407?_skw=crochet+yarn&hash=item298d3140a7%3Ag%3AalgAAeSwIvJqf6s8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|226446579706|525634506016",
-      "category": "Yarn",
-      "title": "Bernat Super Value Yarn.  ",
-      "condition": "New",
-      "itemPrice": 7.99,
-      "totalPrice": 10.48,
-      "price": "$7.99",
-      "shippingCost": 2.49,
-      "shippingLabel": "+ $2.49 shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|226446579706|525634506016.jpg",
-      "url": "https://www.ebay.com/itm/226446579706?_skw=crochet+yarn&hash=item34b94497fa%3Ag%3ADYMAAeSw0IdqAhVM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|204553238162|505138917829",
-      "category": "Yarn",
-      "title": "New 42 Colors 25g Super Soft Crochet Bamboo Cotton Knitting Yarn Wool Yarn",
-      "condition": "New",
-      "itemPrice": 2.53,
-      "totalPrice": 2.53,
-      "price": "$2.53",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|204553238162|505138917829.jpg",
-      "url": "https://www.ebay.com/itm/204553238162?_skw=crochet+yarn&hash=item2fa052b692%3Ag%3Am8QAAOSwJ7RlYSFA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|296771126421|595007150437",
-      "category": "Yarn",
-      "title": "NEW  Multi colors Milk Cotton Skeins Hand Knitting Wool Baby Crochet Yarn 50g",
-      "condition": "New",
-      "itemPrice": 1.99,
-      "totalPrice": 7.98,
-      "price": "$1.99",
-      "shippingCost": 5.99,
-      "shippingLabel": "+ $5.99 shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|296771126421|595007150437.jpg",
-      "url": "https://www.ebay.com/itm/296771126421?_skw=crochet+yarn&hash=item4518f00495%3Ag%3AcIQAAOSwbN1nE0yi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
       "id": "v1|306787015067|0",
       "category": "Yarn",
       "title": "Acrylic Yarn Skeins Set for Crocheting Multicolored 20g Soft Knitting Yarn Skein",
@@ -182,7 +137,37 @@
       "url": "https://www.ebay.com/itm/306787015067?_skw=crochet+yarn&hash=item476dee599b%3Ag%3AlCMAAeSwqVVpnMVu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|154747739781|454840530735",
+      "id": "v1|398221137414|0",
+      "category": "Yarn",
+      "title": "2 Pack Mainstays Medium Acrylic Blue Blend Yarn 5 oz 285 Yards Knit Crochet",
+      "condition": "New",
+      "itemPrice": 8.71,
+      "totalPrice": 8.71,
+      "price": "$8.71",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|398221137414|0.jpg",
+      "url": "https://www.ebay.com/itm/398221137414?_skw=crochet+yarn&hash=item5cb7d45606%3Ag%3AKAsAAeSwAY9qZ76N&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|226446579706|525634506000",
+      "category": "Yarn",
+      "title": "Bernat Super Value Yarn.  ",
+      "condition": "New",
+      "itemPrice": 7.99,
+      "totalPrice": 10.48,
+      "price": "$7.99",
+      "shippingCost": 2.49,
+      "shippingLabel": "+ $2.49 shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|226446579706|525634506000.jpg",
+      "url": "https://www.ebay.com/itm/226446579706?_skw=crochet+yarn&hash=item34b94497fa%3Ag%3ADYMAAeSw0IdqAhVM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|154747739781|454840530739",
       "category": "Crochet Cotton",
       "title": "Threadart 100% Pure Cotton Multicolor Crochet Thread Sets - 7 Colors & 2 Sizes",
       "condition": "New",
@@ -193,7 +178,7 @@
       "shippingLabel": "Free shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|154747739781|454840530735.jpg",
+      "image": "data/images/v1|154747739781|454840530739.jpg",
       "url": "https://www.ebay.com/itm/154747739781?_skw=crochet+thread+cotton&hash=item2407af1e85%3Ag%3A%7EUwAAOSwKUpht6x8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
@@ -209,12 +194,12 @@
       "originalPrice": null,
       "discountLabel": null,
       "image": "data/images/v1|315296390084|0.jpg",
-      "url": "https://www.ebay.com/itm/315296390084?_skw=crochet+thread+cotton&hash=item4969211bc4%3Ag%3AcKMAAOSwsDRmHU3y&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa%2BoixAvhJPrjsyWld5aenxM1kQTXd%2FI2X2MOJfA4LQJscu32S7uqvD24yRQf68RQM1D6CuSkYhmLhWSYrcgxDGS0gaInIvVLIik9A8%2BwVjtdjHi0toK8bydDSQ%2FCTQc%2F91OkbCYWiapVND9sjOk7VbbccN76H4hyFRY6lSwCR28KQ6IvX4YeuHb4Ugl9wuMHPnESfvdIvTA6BXyazN7%2BSTpCcqUg0RlYUHrcezn6kDZP7ciY0ewd4J7vYZ3GV4s2FKVVl7lIrEboRH5hvWOJ6Wx%2FgrjIm6XjZR3VvyJMMt9w%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "url": "https://www.ebay.com/itm/315296390084?_skw=crochet+thread+cotton&hash=item4969211bc4%3Ag%3AcKMAAOSwsDRmHU3y&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa%2BoixAvhJPrjsyWld5aenxM1kQTXd%2FI2X2MOJfA4LQJscu32S7uqvD24yRQf68RQM1D6CuSkYhmLhWSYrcgxDGS0gaInIvVLIik9A8%2BwVjtdjHi0toK8bydDSQ%2FCTQc%2F8V2%2BaDU9fa26%2F5xYXI2BCqbfgBxV51%2BBuK2tM293lDXtMGI9bndIvGauEP74JF0gDVONHqDo66WW7zBmdhuee4XFbV98SfOWos8ADnbmg68l3lL9fn3PD7rwOhdCNs1GLTsJPEwuS0VakKFhgXC1vrpbWdlXDEkNEzoZBUu3tXWA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|315273974717|0",
+      "id": "v1|315296405156|0",
       "category": "Crochet Cotton",
-      "title": "Crochet/Embroidery Thread Cotton Yarn Black - Set of 10 rolls",
+      "title": "Crochet/Embroidery Thread Cotton Yarn Ultra Very Light Mocha Brown DMC #3866- 10",
       "condition": "New",
       "itemPrice": 12.99,
       "totalPrice": 12.99,
@@ -223,8 +208,23 @@
       "shippingLabel": "Free shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|315273974717|0.jpg",
-      "url": "https://www.ebay.com/itm/315273974717?_skw=crochet+thread+cotton&hash=item4967cb13bd%3Ag%3A12EAAOSwL8ZmEELL&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYSL1R2x6GMiZJTViaytK0uYd9FyhNDZeCqA83b8Rt2eXVMUYW%2BlzKbsNeQt4IghZfM6ze4sHQ0RTz%2BnugPKyFt1RtzYSU9JV6QWlJvdCt%2B2eP3x6pHM%2Bzd1wN6dVp9VlXG0czAlfoiI8ZsVq%2FfUklvbytaMN8OSpbjeiOIdtMgmx2FJv7HmZBrRRAADHTZSf2OM2Zxgvmr0%2BZgkvOteY44nooMhi2%2FxXepAeDfjvfd%2FtdCQ97%2FfiF%2BRJHyN6x2LUOSfeLMLeo5a08JAzu9UBk8PrnTxQtZ167n2hhEIZl%2FTw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|315296405156|0.jpg",
+      "url": "https://www.ebay.com/itm/315296405156?_skw=crochet+thread+cotton&hash=item49692156a4%3Ag%3AozoAAOSws7ZmHU-O&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZc3y6QXN1sCxuJ%2Fg5Ppd9CnhECo78kGZfeYRylrKFc8SBk8LBq1epD6QJS%2FJ7iIOdx0BbwL%2Bn6imk9Q2ZduPB5DP6q1YUOdKN60lJfE4kO49viRIrdr2rMYc8kyZLoRo6J16vNq0XC6vWpVN7HKFwR5s6S55WZi6bjS1LYEZd9o4qNSW7559Ao76IFCSuli5TuWBx0ebtnbskkF18bUYP1eUbatd7mTOobCqKCRsyG8roVi%2Ff2Lf%2Fo87q6YcSgZV8p8uz9wCWAM%2BQnhChcEpS3Wb4dHmAMZGolV%2FtvA6ddag%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|152119609315|453188539031",
+      "category": "Crochet Cotton",
+      "title": "COTTON CROCHET THREAD 30 COLORS SIZE 3 - 50G BALL- THREADART",
+      "condition": "New",
+      "itemPrice": 9.99,
+      "totalPrice": 9.99,
+      "price": "$9.99",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|152119609315|453188539031.jpg",
+      "url": "https://www.ebay.com/itm/152119609315?_skw=crochet+thread+cotton&hash=item236b0907e3%3Ag%3AyB8AAOSwg-ZdemO7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|154750944747|454843957545",
@@ -257,21 +257,6 @@
       "url": "https://www.ebay.com/itm/237078704037?_skw=crochet+thread+cotton&hash=item3732fdefa5%3Ag%3AAKAAAeSwxJJqs5Cc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|152119609315|451318269255",
-      "category": "Crochet Cotton",
-      "title": "COTTON CROCHET THREAD 30 COLORS SIZE 3 - 50G BALL- THREADART",
-      "condition": "New",
-      "itemPrice": 9.99,
-      "totalPrice": 9.99,
-      "price": "$9.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|152119609315|451318269255.jpg",
-      "url": "https://www.ebay.com/itm/152119609315?_skw=crochet+thread+cotton&hash=item236b0907e3%3Ag%3AyB8AAOSwg-ZdemO7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
       "id": "v1|336607411785|0",
       "category": "Notions",
       "title": "Crochet & Knitting Notions & Tools Set w/ Case, Aluminum Hooks, Stitch Markers",
@@ -299,7 +284,7 @@
       "originalPrice": null,
       "discountLabel": null,
       "image": "data/images/v1|376403943120|0.jpg",
-      "url": "https://www.ebay.com/itm/376403943120?_skw=crochet+stitch+markers+notions&hash=item57a36c5ed0%3Ag%3AgvkAAOSw3glj-rKg&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb%2FmLi6QdRIT2OpzdsA%2FP6MdLe4OVVEWumEnbgtqu1leipLw%2BRG%2BccaxS2%2BFb6OVWNNbucLNx4azcnfwW52pjNyUaMfc5LSaFDgaHM%2BLPjB9X%2FSfLcvNho9tCWw0c8G2Ag18tRi%2FEYfRFhvUss9dzptNPjip4R6CcfhZR3bWJY1KOJX6YUBUkWFmYtDzZ%2Bmd3QDDAKm2h2qd%2B72yAG84VYzAp6yv3uW%2BAv16qY7Dp6JsnOxm5SebGezXdGtUDAreZGi8nlx3GSRx3behRh3C8sVYU%2BmaWbw%2FOrAeLn602820%2FySZwhtIMl5AsGB6WkDRiA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "url": "https://www.ebay.com/itm/376403943120?_skw=crochet+stitch+markers+notions&hash=item57a36c5ed0%3Ag%3AgvkAAOSw3glj-rKg&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb%2FmLi6QdRIT2OpzdsA%2FP6MdLe4OVVEWumEnbgtqu1leipLw%2BRG%2BccaxS2%2BFb6OVWNNbucLNx4azcnfwW52pjNyUaMfc5LSaFDgaHM%2BLPjB9X%2FSfLcvNho9tCWw0c8G2AifCXt6cWZD0gv8FGOuxDZ8LzBmskOsqSJ3CJ4AUabG88gDm9MJMfjiTOMQLqPmqvzQxwG38ATdEuCu1a8MLt%2FgpVEPhycBZPp%2FZrk2wC3f3QZ6hm4%2FQCUJZrZCE9a5e6u1nHg%2FlOUsLzR7AeaZFCEV0HsUjwTcOnpV%2FMWS9%2BE4v%2FkaoEH62D0n%2F6cuAQTxvAo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|186697934289|0",
@@ -332,21 +317,6 @@
       "url": "https://www.ebay.com/itm/398204303993?_skw=crochet+stitch+markers+notions&hash=item5cb6d37a79%3Ag%3AnfYAAeSwdJpqYP2w&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|336717516136|0",
-      "category": "Notions",
-      "title": "Stitch Counters 2Pcs LED Digital Row Counter and Stitch Markers 50 Pcs Crochet S",
-      "condition": "New",
-      "itemPrice": 10.75,
-      "totalPrice": 10.75,
-      "price": "$10.75",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|336717516136|0.jpg",
-      "url": "https://www.ebay.com/itm/336717516136?_skw=crochet+stitch+markers+notions&hash=item4e65ed8d68%3Ag%3AOsEAAeSw1bNqa%7EBS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
       "id": "v1|125437289152|0",
       "category": "Notions",
       "title": "Knitting Zone Pewter Knitting and Crochet Stitch Markers, Set of 4 in Reusable",
@@ -360,6 +330,21 @@
       "discountLabel": null,
       "image": "data/images/v1|125437289152|0.jpg",
       "url": "https://www.ebay.com/itm/125437289152?_skw=crochet+stitch+markers+notions&hash=item1d34a522c0%3Ag%3AHM4AAOSwDlBi4sl5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|115477654417|0",
+      "category": "Notions",
+      "title": "Knitting Zone Pewter Knitting and Crochet Stitch Markers, Set of 4 in Reusable",
+      "condition": "New",
+      "itemPrice": 12,
+      "totalPrice": 15.59,
+      "price": "$12.00",
+      "shippingCost": 3.59,
+      "shippingLabel": "+ $3.59 shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|115477654417|0.jpg",
+      "url": "https://www.ebay.com/itm/115477654417?_skw=crochet+stitch+markers+notions&hash=item1ae3012b91%3Ag%3AidMAAOSw94Vi4sl8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|387805747874|0",
@@ -389,7 +374,7 @@
       "originalPrice": null,
       "discountLabel": null,
       "image": "data/images/v1|396575594880|0.jpg",
-      "url": "https://www.ebay.com/itm/396575594880?_skw=crochet+pattern+PDF&hash=item5c55bf5980%3Ag%3AzHoAAOSwB8doGheb&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaJ1OgclPLUhfjDSirttjemHIqmTdIj7ovb338hScSIuGp6RxwRYNRI7vOSymhSpJLx2qCgTjREVvCxwID4pLAOpF%2BB7wJLVvQ5HwKgCkYsHZIP34jYX7d0Z2z55P8Qw5x7EdTBWxd2ar5sxhDw63v14OVgGT49A1wlZSKO7C1wXnYPWxzEsiy2pdYBNeAWRiM%2Fq0X3Auna5vIe1bXUXYZaC1Q%2F1uUTw7tj6bvgltjuFKsA9MQPQNIX0fzZ88edx9grrA91J10m%2Fv%2BGdrcw70wxkn5aneTlpZjDppcsMwEd2Q%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "url": "https://www.ebay.com/itm/396575594880?_skw=crochet+pattern+PDF&hash=item5c55bf5980%3Ag%3AzHoAAOSwB8doGheb&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaJ1OgclPLUhfjDSirttjemHIqmTdIj7ovb338hScSIuGp6RxwRYNRI7vOSymhSpJLx2qCgTjREVvCxwID4pLAOpF%2BB7wJLVvQ5HwKgCkYsHZIP34jYX7d0Z2z55P8Qw5wUTuMEO952i8W%2FsvQ53NB49uuy0CP3ndPjCS32lTlghhUpfaS2nIFpG%2BBvtoiHjmK9yflLBV2IYtuWFFQpYF6wdfY9cp0PjDfJFelCXs1Z8Rr%2BYHVJPeX7Q975qyn59i5mMtqfOpyh8Md3nRjASGQzDCQwBno%2BfC8Z2snd4wbcfg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|387805722079|0",
@@ -422,6 +407,21 @@
       "url": "https://www.ebay.com/itm/387805779135?_skw=crochet+pattern+PDF&hash=item5a4b0694bf%3Ag%3AGwMAAOSwDZ1nfwIm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
+      "id": "v1|387805837089|0",
+      "category": "Patterns",
+      "title": "Crochet Pattern PDF Nativity Scene Christmas Decoration Unique Vintage",
+      "condition": "New",
+      "itemPrice": 4.99,
+      "totalPrice": 4.99,
+      "price": "$4.99",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|387805837089|0.jpg",
+      "url": "https://www.ebay.com/itm/387805837089?_skw=crochet+pattern+PDF&hash=item5a4b077721%3Ag%3Ank8AAOSwmRlnfwj3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
       "id": "v1|392104017175|0",
       "category": "Patterns",
       "title": "4000 Printable Crochet Patterns-Teaching-Guides-Books-Afghan-Knit-Stitch-PDF-DVD",
@@ -435,21 +435,6 @@
       "discountLabel": null,
       "image": "data/images/v1|392104017175|0.jpg",
       "url": "https://www.ebay.com/itm/392104017175?_skw=crochet+pattern+PDF&hash=item5b4b387d17%3Ag%3AHiIAAOSwS9BbhKsC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|198650854247|0",
-      "category": "Patterns",
-      "title": "Christmas Tree Crochet Pattern PDF – Santa Gift Amigurumi Holiday DIY Tutorial",
-      "condition": "New",
-      "itemPrice": 4.85,
-      "totalPrice": 4.85,
-      "price": "$4.85",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|198650854247|0.jpg",
-      "url": "https://www.ebay.com/itm/198650854247?_skw=crochet+pattern+PDF&hash=item2e40837b67%3Ag%3AQ34AAeSwSbhqrXpm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|206154775861|0",
@@ -479,52 +464,7 @@
       "originalPrice": null,
       "discountLabel": null,
       "image": "data/images/v1|128021929972|0.jpg",
-      "url": "https://www.ebay.com/itm/128021929972?_skw=amigurumi+crochet+kit&hash=item1dceb39ff4%3Ag%3AiMoAAeSwGdhqqLEk&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaLd%2B7TP6%2FCQ0KwOVzmWh9%2FE0hSlMDPKECYb%2FZGX%2F3C9jnh7xlhE4ed1nCL%2BBDNr6wMnct8M0A7JU9SbR80pX5t9nwpFsdfqTprCTPIs5i48DdvFaDbrIGkUHUnjYJOwpsU3vltbrNLmsawNFrRDXjtNwTKkwrMkgU8zDxPn0lw3ptXVab7BDCGLQ9vKCXYhOQLlGs6Rebudh6lzVNpycBG5SyWrhX4Z3Vf4XeizEZ8VTnYEp05FkEcPdt0e1bhZZm6z5oxmIrernQoYHiAPqVQy4Yn7HcdtOhGmugHzIiQSQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|205465558916|0",
-      "category": "Kits",
-      "title": "Cat Crochet Kit for Beginners Amigurumi DIY Set with Video Tutorial",
-      "condition": "New",
-      "itemPrice": 17.99,
-      "totalPrice": 17.99,
-      "price": "$17.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|205465558916|0.jpg",
-      "url": "https://www.ebay.com/itm/205465558916?_skw=amigurumi+crochet+kit&hash=item2fd6b39f84%3Ag%3A%7EoAAAeSwunxqcTcQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|317600319720|0",
-      "category": "Kits",
-      "title": "Crochet Kit for Beginners, Turtle Amigurumi Starter Kit, Easy DIY Craft S",
-      "condition": "New",
-      "itemPrice": 11.88,
-      "totalPrice": 11.88,
-      "price": "$11.88",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|317600319720|0.jpg",
-      "url": "https://www.ebay.com/itm/317600319720?_skw=amigurumi+crochet+kit&hash=item49f27448e8%3Ag%3AzB0AAeSwCmlpKkH1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|198658066905|0",
-      "category": "Kits",
-      "title": "Crochet Kit for Beginners: Make 3 Cute Amigurumi Animals with Easy-to-Follow Vid",
-      "condition": "New",
-      "itemPrice": 14.99,
-      "totalPrice": 14.99,
-      "price": "$14.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|198658066905|0.jpg",
-      "url": "https://www.ebay.com/itm/198658066905?_skw=amigurumi+crochet+kit&hash=item2e40f189d9%3Ag%3ALm0AAeSw34pqsaM8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "url": "https://www.ebay.com/itm/128021929972?_skw=amigurumi+crochet+kit&hash=item1dceb39ff4%3Ag%3AWjoAAeSwrWJqtDfD&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaLd%2B7TP6%2FCQ0KwOVzmWh9%2FE0hSlMDPKECYb%2FZGX%2F3C9jnh7xlhE4ed1nCL%2BBDNr6wMnct8M0A7JU9SbR80pX5t9nwpFsdfqTprCTPIs5i48DdvFaDbrIGkUHUnjYJOwpsAuJoSelVYaoHTMAeXWNUuCzOU4jfpE5eeYhcFMIgWF13j55IWisOnyooD6wh00TWygalksEtdltnfq27HjSAxJEl7jEvwg8sgQJ4xvR7LDn7g52IYTSM9jbZl%2FlwwJzbnvb8porHkd30CX1PyW7fEcu6y9iXWbZl9w7IQ4ukbdw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|206057967406|0",
@@ -542,19 +482,49 @@
       "url": "https://www.ebay.com/itm/206057967406?_skw=amigurumi+crochet+kit&hash=item2ffa030f2e%3Ag%3AECkAAeSwf2lp8AKi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|188965729135|0",
-      "category": "Books & Magazines",
-      "title": "The Complete Book of Crochet Stitch Designs: 500 Classic & Original Patterns...",
-      "condition": "Good",
-      "itemPrice": 10.83,
-      "totalPrice": 10.83,
-      "price": "$10.83",
+      "id": "v1|205465558916|0",
+      "category": "Kits",
+      "title": "Cat Crochet Kit for Beginners Amigurumi DIY Set with Video Tutorial",
+      "condition": "New",
+      "itemPrice": 17.99,
+      "totalPrice": 17.99,
+      "price": "$17.99",
       "shippingCost": 0,
       "shippingLabel": "Free shipping",
-      "originalPrice": "$11.60",
-      "discountLabel": "7% off",
-      "image": "data/images/v1|188965729135|0.jpg",
-      "url": "https://www.ebay.com/itm/188965729135?_skw=crochet+pattern+book&hash=item2bff3c336f%3Ag%3AENoAAeSw-YBqtAAQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|205465558916|0.jpg",
+      "url": "https://www.ebay.com/itm/205465558916?_skw=amigurumi+crochet+kit&hash=item2fd6b39f84%3Ag%3A%7EoAAAeSwunxqcTcQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|128007874335|0",
+      "category": "Kits",
+      "title": "Crochet Kit for Beginners: Make 3 Cute Amigurumi Animals with Easy-to-Follow Vid",
+      "condition": "New",
+      "itemPrice": 16.98,
+      "totalPrice": 16.98,
+      "price": "$16.98",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|128007874335|0.jpg",
+      "url": "https://www.ebay.com/itm/128007874335?_skw=amigurumi+crochet+kit&hash=item1dcddd271f%3Ag%3A%7Ew4AAeSwizZqcAWL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|298535467092|0",
+      "category": "Kits",
+      "title": "Kogyxe Beginners Crochet Kit, Amigurumi Plants Monstera, Monstera",
+      "condition": "New",
+      "itemPrice": 12.69,
+      "totalPrice": 12.69,
+      "price": "$12.69",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|298535467092|0.jpg",
+      "url": "https://www.ebay.com/itm/298535467092?_skw=amigurumi+crochet+kit&hash=item458219b854%3Ag%3AayAAAeSwARRqZsRd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|168661108443|0",
@@ -572,6 +542,36 @@
       "url": "https://www.ebay.com/itm/168661108443?_skw=crochet+pattern+book&hash=item2744fc46db%3Ag%3ARqQAAeSwL3VqmZkE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
+      "id": "v1|188965729135|0",
+      "category": "Books & Magazines",
+      "title": "The Complete Book of Crochet Stitch Designs: 500 Classic & Original Patterns...",
+      "condition": "Good",
+      "itemPrice": 10.83,
+      "totalPrice": 10.83,
+      "price": "$10.83",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": "$11.60",
+      "discountLabel": "7% off",
+      "image": "data/images/v1|188965729135|0.jpg",
+      "url": "https://www.ebay.com/itm/188965729135?_skw=crochet+pattern+book&hash=item2bff3c336f%3Ag%3AU8gAAeSwA0JqtTx0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|820166450359|0",
+      "category": "Books & Magazines",
+      "title": "Doilies Updated Crochet Pattern Book Leisure Arts 9 Patterns Modern Retro Home",
+      "condition": "New",
+      "itemPrice": 9.5,
+      "totalPrice": 9.5,
+      "price": "$9.50",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|820166450359|0.jpg",
+      "url": "https://www.ebay.com/itm/820166450359?_skw=crochet+pattern+book&hash=itembef5badcb7%3Ag%3AW9kAAeSwEb1qtSRE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
       "id": "v1|267787696392|0",
       "category": "Books & Magazines",
       "title": "Lot of 3 Crochet Books by Publications Int. Ltd. Granny Squares, Gifts, Scarves",
@@ -587,49 +587,34 @@
       "url": "https://www.ebay.com/itm/267787696392?_skw=crochet+pattern+book&hash=item3e5963f908%3Ag%3AcNwAAeSwuqxqq0Vt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|168702011558|0",
+      "id": "v1|137756245505|0",
       "category": "Books & Magazines",
-      "title": "Modern Crochet Style: 15 colourful crochet patterns for you and your home, inclu",
-      "condition": "Like New",
-      "itemPrice": 12.39,
-      "totalPrice": 12.39,
-      "price": "$12.39",
+      "title": "Zoomigurumi 9: 15 Cute Amigurumi Patterns by 12 Great Designers",
+      "condition": "Good",
+      "itemPrice": 5.95,
+      "totalPrice": 5.95,
+      "price": "$5.95",
       "shippingCost": 0,
       "shippingLabel": "Free shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|168702011558|0.jpg",
-      "url": "https://www.ebay.com/itm/168702011558?_skw=crochet+pattern+book&hash=item27476c68a6%3Ag%3ARrEAAOSw6BJhXuBE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|137756245505|0.jpg",
+      "url": "https://www.ebay.com/itm/137756245505?_skw=crochet+pattern+book&hash=item2012e97e01%3Ag%3AbKgAAeSwHJdqtCjG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|298343515751|0",
+      "id": "v1|168614821911|0",
       "category": "Books & Magazines",
-      "title": "Lot of Seven 21st Century Crochet and Knitting Pattern Books from Easy to Hard",
-      "condition": "Used",
-      "itemPrice": 18.95,
-      "totalPrice": 18.95,
-      "price": "$18.95",
+      "title": "Crochet Snowflakes Step-by-Step: A Delightful Flurry of 40 Patterns for Begi...",
+      "condition": "Very Good",
+      "itemPrice": 12.06,
+      "totalPrice": 12.06,
+      "price": "$12.06",
       "shippingCost": 0,
       "shippingLabel": "Free shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|298343515751|0.jpg",
-      "url": "https://www.ebay.com/itm/298343515751?_skw=crochet+pattern+book&hash=item4576a8c667%3Ag%3A0NEAAeSwTU5qD6jq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|187236650304|0",
-      "category": "Books & Magazines",
-      "title": "ANNIE'S MILE-A-MINUTE AFGHANS 6 DESIGNS CROCHET PATTERN BOOK",
-      "condition": "Used",
-      "itemPrice": 7.99,
-      "totalPrice": 14.98,
-      "price": "$7.99",
-      "shippingCost": 6.99,
-      "shippingLabel": "+ $6.99 shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|187236650304|0.jpg",
-      "url": "https://www.ebay.com/itm/187236650304?_skw=crochet+pattern+book&hash=item2b982c8d40%3Ag%3AcksAAOSwoRNoK3cN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|168614821911|0.jpg",
+      "url": "https://www.ebay.com/itm/168614821911?_skw=crochet+pattern+book&hash=item27423a0017%3Ag%3Aku8AAeSwFEdqtE%7E5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|287597190697|0",
@@ -647,21 +632,6 @@
       "url": "https://www.ebay.com/itm/287597190697?_skw=vintage+crochet+book+lot&hash=item42f620de29%3Ag%3ANDQAAeSw69Rqr07E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|407236782035|0",
-      "category": "Vintage Books",
-      "title": "(6) Vintage Hand Crochet Book Lot",
-      "condition": "Used",
-      "itemPrice": 15,
-      "totalPrice": 15,
-      "price": "$15.00",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|407236782035|0.jpg",
-      "url": "https://www.ebay.com/itm/407236782035?_skw=vintage+crochet+book+lot&hash=item5ed13427d3%3Ag%3ALvMAAeSwg1xqsoaI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
       "id": "v1|198587633604|0",
       "category": "Vintage Books",
       "title": "10 Assorted Vintage Crochet Pattern Books Lot 1970's - 1980's + 1 Pattern",
@@ -675,6 +645,21 @@
       "discountLabel": null,
       "image": "data/images/v1|198587633604|0.jpg",
       "url": "https://www.ebay.com/itm/198587633604?_skw=vintage+crochet+book+lot&hash=item2e3cbecfc4%3Ag%3Aa9MAAeSw3PFpH0KM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|407236782035|0",
+      "category": "Vintage Books",
+      "title": "(6) Vintage Hand Crochet Book Lot",
+      "condition": "Used",
+      "itemPrice": 15,
+      "totalPrice": 15,
+      "price": "$15.00",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|407236782035|0.jpg",
+      "url": "https://www.ebay.com/itm/407236782035?_skw=vintage+crochet+book+lot&hash=item5ed13427d3%3Ag%3ALvMAAeSwg1xqsoaI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|168137868915|0",
@@ -722,21 +707,6 @@
       "url": "https://www.ebay.com/itm/188859019593?_skw=vintage+crochet+book+lot&hash=item2bf8dff149%3Ag%3AI78AAeSwL3Vqk0Qg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|188922471407|0",
-      "category": "Vintage Books",
-      "title": "Lot Of 16 Vintage Crochet And Knitting Pattern Booklets Leaflets Books",
-      "condition": "Good",
-      "itemPrice": 8,
-      "totalPrice": 13.68,
-      "price": "$8.00",
-      "shippingCost": 5.68,
-      "shippingLabel": "+ $5.68 shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|188922471407|0.jpg",
-      "url": "https://www.ebay.com/itm/188922471407?_skw=vintage+crochet+book+lot&hash=item2bfca823ef%3Ag%3AnD8AAeSwE01qpcgY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
       "id": "v1|287544114390|0",
       "category": "Vintage Books",
       "title": "Vintage Crochet Knitting Pattern Book Lot of 12 Leisure Arts Vogue Coats Annie’s",
@@ -752,19 +722,19 @@
       "url": "https://www.ebay.com/itm/287544114390?_skw=vintage+crochet+book+lot&hash=item42f2f6fcd6%3Ag%3A7eEAAeSwzMRqjOaq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|206558985091|0",
+      "id": "v1|820039068800|0",
       "category": "Vintage Books",
-      "title": "Magic Crochet Lot Of 14 Magazines Vintage Classic Antique Pattern Books",
+      "title": "Vintage Crochet Pattern Book Lot of 7 1940s Hats Bags Collars Doll Baby Booties",
       "condition": "Used",
-      "itemPrice": 29.99,
-      "totalPrice": 29.99,
-      "price": "$29.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
+      "itemPrice": 24.99,
+      "totalPrice": 34.98,
+      "price": "$24.99",
+      "shippingCost": 9.99,
+      "shippingLabel": "+ $9.99 shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|206558985091|0.jpg",
-      "url": "https://www.ebay.com/itm/206558985091?_skw=vintage+crochet+book+lot&hash=item3017dffb83%3Ag%3AjloAAeSwN55qqW4s&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|820039068800|0.jpg",
+      "url": "https://www.ebay.com/itm/820039068800?_skw=vintage+crochet+book+lot&hash=itembeee232c80%3Ag%3AtIwAAeSw3EVqi1kl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|800491952335|0",
@@ -780,6 +750,21 @@
       "discountLabel": null,
       "image": "data/images/v1|800491952335|0.jpg",
       "url": "https://www.ebay.com/itm/800491952335?_skw=vintage+crochet+book+lot&hash=itemba6109d8cf%3Ag%3AkFsAAeSwPoZqezNf&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|298624825121|0",
+      "category": "Vintage Books",
+      "title": "Lot Of 4 Vintage Crochet Books",
+      "condition": "Used",
+      "itemPrice": 25,
+      "totalPrice": 25,
+      "price": "$25.00",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|298624825121|0.jpg",
+      "url": "https://www.ebay.com/itm/298624825121?_skw=vintage+crochet+book+lot&hash=item45876d3721%3Ag%3Al4QAAeSwzf9qkgNl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|227533651920|0",
@@ -809,67 +794,22 @@
       "originalPrice": null,
       "discountLabel": null,
       "image": "data/images/v1|178500621717|0.jpg",
-      "url": "https://www.ebay.com/itm/178500621717?_skw=vintage+crochet+hook&hash=item298f775595%3Ag%3AMuwAAeSwnz9qoBEh&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZUAeBKL5lg2Rm%2BdcPPQ117uO5OwinNRIqaG1bB55jZzBvoLLrFOVAgiKAfXpXwPt7J3Scas%2FDBT1Ebuq1wpUZfQ%2BVc29qv9%2FZW0lFQ8qxFJ8%2BlBKIEuGW9Hi%2FCF9YZ%2FjMQ%2BaDbaZgjYnvRtGB%2FqHF%2BS7hY4I0cOqU1vxEKHX8Yrw4MTk0brJn%2B0sARJ1V9adtzzRsfQl2Vjk%2FIvR%2BTdSKYPFxjB0NIuDK2G0ifiM4NAn%2B3WhDLa%2Bdf6im36QIMrk2%2FLE%2BFz5wsmKSXPa%2BumR5lQi3GKUlaclfH7XGSnQnMRw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "url": "https://www.ebay.com/itm/178500621717?_skw=vintage+crochet+hook&hash=item298f775595%3Ag%3AMuwAAeSwnz9qoBEh&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZUAeBKL5lg2Rm%2BdcPPQ117uO5OwinNRIqaG1bB55jZzBvoLLrFOVAgiKAfXpXwPt7J3Scas%2FDBT1Ebuq1wpUZfQ%2BVc29qv9%2FZW0lFQ8qxFJ8%2BlBKIEuGW9Hi%2FCF9YZ%2FjNjAgz3ffHGIhmXB9Bx1Z4PgvTjbeRZGZv8MoZGt7fdle9KfOqeqME%2Ffe2z95aahN2roLhYlhPlbG7Suhwx3rcODGHM0MsaHXSpbDx7Cbg3cBLEFPGmJ%2BMq8nR3g%2BsoSfnSrj5z5iwsUr5dnSYNn%2FHnH9ecNPlUQMnSHDAMWHsUig%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|227533651109|0",
+      "id": "v1|287606034935|0",
       "category": "Vintage Hooks",
-      "title": "Vintage 1940’s Crochet Hook CLARKS ONT (Before Coats and Clark’s) Size G USA",
+      "title": "Lot of 7 Vintage Steel Crochet Hooks England & USA ( L’Oreal, Boye, Milward )",
       "condition": "Used",
-      "itemPrice": 10,
-      "totalPrice": 10,
-      "price": "$10.00",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
+      "itemPrice": 9.99,
+      "totalPrice": 16.98,
+      "price": "$9.99",
+      "shippingCost": 6.99,
+      "shippingLabel": "+ $6.99 shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|227533651109|0.jpg",
-      "url": "https://www.ebay.com/itm/227533651109?_skw=vintage+crochet+hook&hash=item34fa0ffca5%3Ag%3AM%7EUAAeSwDp1qeNJ4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|820112629223|0",
-      "category": "Vintage Hooks",
-      "title": "Vintage Annie’s Attic Crochet Hook LOT Of 4: 9” G, 6” 8/H 6/G 5/F New NOS Rare",
-      "condition": "New",
-      "itemPrice": 15.99,
-      "totalPrice": 15.99,
-      "price": "$15.99",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|820112629223|0.jpg",
-      "url": "https://www.ebay.com/itm/820112629223?_skw=vintage+crochet+hook&hash=itembef2859de7%3Ag%3A4ekAAeSwvA9qo1bi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|377493108000|0",
-      "category": "Vintage Hooks",
-      "title": "lot of 24 Vintage  crochet hooks",
-      "condition": "Used",
-      "itemPrice": 13.99,
-      "totalPrice": 21.88,
-      "price": "$13.99",
-      "shippingCost": 7.89,
-      "shippingLabel": "+ $7.89 shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|377493108000|0.jpg",
-      "url": "https://www.ebay.com/itm/377493108000?_skw=vintage+crochet+hook&hash=item57e457b520%3Ag%3AvCIAAeSw-KZqpvEE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
-    },
-    {
-      "id": "v1|227533652329|0",
-      "category": "Vintage Hooks",
-      "title": "Vintage Hero Crochet Hook Set of 2 Sizes 10 and 12 Made In USA Steel",
-      "condition": "Used",
-      "itemPrice": 15,
-      "totalPrice": 15,
-      "price": "$15.00",
-      "shippingCost": 0,
-      "shippingLabel": "Free shipping",
-      "originalPrice": null,
-      "discountLabel": null,
-      "image": "data/images/v1|227533652329|0.jpg",
-      "url": "https://www.ebay.com/itm/227533652329?_skw=vintage+crochet+hook&hash=item34fa100169%3Ag%3A8m4AAeSwR-FqeMpp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|287606034935|0.jpg",
+      "url": "https://www.ebay.com/itm/287606034935?_skw=vintage+crochet+hook&hash=item42f6a7d1f7%3Ag%3AfeMAAeSwGABqtVj2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
       "id": "v1|137715714653|0",
@@ -887,19 +827,64 @@
       "url": "https://www.ebay.com/itm/137715714653?_skw=vintage+crochet+hook&hash=item20107f0a5d%3Ag%3A6kYAAeSw2o5qlxIS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     },
     {
-      "id": "v1|356735459735|0",
+      "id": "v1|820112629223|0",
       "category": "Vintage Hooks",
-      "title": "Vintage Susan Bates Clipson Crochet Hook w/ Stitch Saver Clip Size 10 NEW",
+      "title": "Vintage Annie’s Attic Crochet Hook LOT Of 4: 9” G, 6” 8/H 6/G 5/F New NOS Rare",
       "condition": "New",
-      "itemPrice": 8.5,
-      "totalPrice": 14.5,
-      "price": "$8.50",
-      "shippingCost": 6,
-      "shippingLabel": "+ $6.00 shipping",
+      "itemPrice": 15.99,
+      "totalPrice": 15.99,
+      "price": "$15.99",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
       "originalPrice": null,
       "discountLabel": null,
-      "image": "data/images/v1|356735459735|0.jpg",
-      "url": "https://www.ebay.com/itm/356735459735?_skw=vintage+crochet+hook&hash=item530f172197%3Ag%3AAWIAAeSwSBxn7p0C&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+      "image": "data/images/v1|820112629223|0.jpg",
+      "url": "https://www.ebay.com/itm/820112629223?_skw=vintage+crochet+hook&hash=itembef2859de7%3Ag%3A4ekAAeSwvA9qo1bi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|137770660436|0",
+      "category": "Vintage Hooks",
+      "title": "HUGE LOT-41 Vintage Metal-Tatting-Crochet Hooks-Boye-Susan Bates-Misc.",
+      "condition": "Used",
+      "itemPrice": 24.95,
+      "totalPrice": 24.95,
+      "price": "$24.95",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|137770660436|0.jpg",
+      "url": "https://www.ebay.com/itm/137770660436?_skw=vintage+crochet+hook&hash=item2013c57254%3Ag%3AexAAAeSwW2tqs-7h&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|227533651109|0",
+      "category": "Vintage Hooks",
+      "title": "Vintage 1940’s Crochet Hook CLARKS ONT (Before Coats and Clark’s) Size G USA",
+      "condition": "Used",
+      "itemPrice": 10,
+      "totalPrice": 10,
+      "price": "$10.00",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|227533651109|0.jpg",
+      "url": "https://www.ebay.com/itm/227533651109?_skw=vintage+crochet+hook&hash=item34fa0ffca5%3Ag%3AM%7EUAAeSwDp1qeNJ4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
+    },
+    {
+      "id": "v1|257761171444|0",
+      "category": "Vintage Hooks",
+      "title": "Vintage Mixed Crochet Hook Lot of 29 Susan Bates Boye Steel Aluminum USA",
+      "condition": "Used",
+      "itemPrice": 36.99,
+      "totalPrice": 36.99,
+      "price": "$36.99",
+      "shippingCost": 0,
+      "shippingLabel": "Free shipping",
+      "originalPrice": null,
+      "discountLabel": null,
+      "image": "data/images/v1|257761171444|0.jpg",
+      "url": "https://www.ebay.com/itm/257761171444?_skw=vintage+crochet+hook&hash=item3c03c357f4%3Ag%3A5CIAAeSwi6RqtBMw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5338775335&customid=&toolid=10049"
     }
   ]
 }
